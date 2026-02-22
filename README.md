@@ -17,10 +17,13 @@ This project presents an end‑to‑end Customer Churn Analysis Dashboard built 
 ---
 
 ## 📂 Dataset Structure
-- `tab_customers`: Customer demographic details  
-- `subscriptions`: Subscription plans and status  
-- `transactions`: Revenue data  
-- `support_tickets`: Customer support interactions  
+
+| Table             | Description                                      |
+|-------------------|--------------------------------------------------|
+| `tab_customers` | Customer demographic details |
+| `tab_subscriptions` | Plan type, start/end dates, churn flag |
+| `tab_transactions` | Revenue transactions per customer |
+| `tab_support_tickets`  | Customer service interaction history  |
 
 ---
 
