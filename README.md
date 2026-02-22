@@ -1,35 +1,47 @@
 # 📉 Customer Churn Analysis Dashboard
 
-### ✴️ Project Overview
+---
+
+## ✴️ Project Overview
 This project presents an end‑to‑end Customer Churn Analysis Dashboard built using SQL + Power BI to analyze customer retention, revenue impact, and behavioral risk indicators. The objective was to design a scalable data model, implement advanced DAX measures, and deliver executive‑ready insights to support churn reduction strategy and revenue protection.
 
-### 🎯 Business Objectives
+---
+
+## 🎯 Business Objectives
 - Measure Churn Rate (%)  
 - Identify Revenue Impact from Churned Customers  
 - Detect High‑Value Customers at Risk  
 - Analyze Churn Drivers (Plan Type, Region, Tenure, Support Behavior)  
 - Build an interactive dashboard with tooltips and drill analysis  
 
-### 📂 Dataset Structure
+---
+
+## 📂 Dataset Structure
 - `tab_customers`: Customer demographic details  
 - `subscriptions`: Subscription plans and status  
 - `transactions`: Revenue data  
 - `support_tickets`: Customer support interactions  
 
-### 🧱 Data Model Design
+---
+
+## 🧱 Data Model Design
 - Central dimension: `customers`  
 - Separate fact tables (subscriptions, transactions, support_tickets)  
 - Single‑direction relationships  
 - No ambiguous joins  
 - Clean filter propagation  
 
-### 🧠 Advanced DAX Techniques Used
+---
+
+## 🧠 Advanced DAX Techniques Used
 Since churn status and revenue existed in separate fact tables, `TREATAS()` was used with `CALCULATETABLE()` to correctly propagate churn filters across the customer dimension for accurate revenue attribution.  
 - Context transformation using `ALL()`  
 - Defensive logic with `SELECTEDVALUE()`  
 - Safe division using `DIVIDE()`  
 
-### 📊 Dashboard Pages
+---
+
+## 📊 Dashboard Pages
 **1. Executive Overview**  
 - Total Customers  
 - Churn Rate %  
@@ -50,14 +62,18 @@ Since churn status and revenue existed in separate fact tables, `TREATAS()` was 
 - Revenue Concentration Analysis  
 - Risk‑Based Insights  
 
-### ✨ Advanced UX Features
+---
+
+## ✨ Advanced UX Features
 - Report Page Tooltips (contextual churn insights)  
 - Navigation buttons (multi‑page flow)  
 - Clean executive layout  
 - Insight text summaries per page  
 - KPI integrity validation & stress testing  
 
-### 🔍 Key Business Insights
+---
+
+## 🔍 Key Business Insights
 - Churn rate aligns with behavioral risk signals.  
 - Churned customers contribute disproportionately to revenue.  
 - High‑tier plan holders show elevated churn probability.  
@@ -65,7 +81,9 @@ Since churn status and revenue existed in separate fact tables, `TREATAS()` was 
 - Certain regions demonstrate concentrated churn clusters.  
 - High‑value customers require a targeted retention strategy.
 
-### 💡 Business Recommendations
+---
+
+## 💡 Business Recommendations
 - Implement early‑warning triggers for customers with increasing support frequency.  
 - Prioritize retention campaigns for high‑tier plan subscribers.  
 - Introduce loyalty benefits for high‑revenue customers approaching renewal.  
@@ -73,20 +91,26 @@ Since churn status and revenue existed in separate fact tables, `TREATAS()` was 
 - Develop churn prediction scoring using behavioral signals.  
 - Align customer success teams with high‑risk segments.
 
-### ✅ KPI Integrity Validation
+---
+
+## ✅ KPI Integrity Validation
 - Filter context stress testing  
 - Churn filter propagation validation  
 - SQL baseline reconciliation  
 - Revenue aggregation verification  
 - Cross‑page consistency checks  
 
-### 🛠️ Tools Used
+---
+
+## 🛠️ Tools Used
 - SQL (Data Analysis & Validation)  
 - Power BI Desktop  
 - DAX (Advanced Filter Context Handling)  
 - Data Modeling (Star Schema Principles)  
 
-### 📌 Portfolio Value
+---
+
+## 📌 Portfolio Value
 This project demonstrates:
 - End‑to‑end BI development  
 - Strong data modeling fundamentals  
@@ -97,4 +121,4 @@ This project demonstrates:
 
 ---
 
-*For any questions or collaboration opportunities, feel free to reach out!*
+>Note *For any questions or collaboration opportunities, feel free to reach out!*
